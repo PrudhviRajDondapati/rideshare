@@ -6,6 +6,7 @@ var ctrlropt = require("../controllers/ridesopted");
 var ctrlrpost = require("../controllers/ridesposted");
 var ctrluser = require("../controllers/user");
 var ctrllogin = require("../controllers/login");
+var ctrlSearch = require("../controllers/search");
 
 //ride opt
 router.get("/ropt", ctrlropt.getridesopted);
@@ -27,6 +28,10 @@ router.post("/nuser", ctrluser.createuser);
 
 //login
 router.post("/login",ctrllogin.getusers);
+
+//search
+router.post("/search",ctrlSearch.savedata);
+router.get("/search",ctrlSearch.getsearchres);
 
 
 module.exports = router;
