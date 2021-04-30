@@ -18,7 +18,7 @@ const getsearchres = function (req, res) {
       });
     };
 
-    const savedata = function (req, res, next) {  
+    const savedata = function (req, res) {  
         console.log("In savedata");
         console.log(req.body);
         // console.log(req.body.login);
@@ -38,7 +38,7 @@ const getsearchres = function (req, res) {
 
     
     
-    }   
+    }  
 
     module.exports = {
         savedata,
